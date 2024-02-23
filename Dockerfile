@@ -2,6 +2,7 @@
 FROM python:3.11
 
 ARG uv=/root/.cargo/bin/uv
+ENV PORT=10000 API_URL=http://localhost:10000
 
 # Install `uv` for faster package boostrapping
 ENV VIRTUAL_ENV=/usr/local
